@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22004"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:02:58 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwNDsyMDIyMjNNQVlDMDA0MTsyMDIyLTExLTA0OzEwOjQ4OjEwIEFNOzMwNDU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwNDsyMDIyMjNNQVlDMDA0MTsyMDIyLTExLTA0OzExOjAyOjU4IEFNOzI7MzE1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="initialising values"/>
+            <declare name="divisor, dividend, q, r" type="Integer" array="False" size=""/>
+            <input variable="divisor"/>
+            <input variable="dividend"/>
+            <assign variable="q" expression="dividend/divisor"/>
+            <assign variable="r" expression="dividend-(divisor*q)"/>
+            <comment text="displaying th result"/>
+            <output expression="q" newline="True"/>
+            <output expression="r" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

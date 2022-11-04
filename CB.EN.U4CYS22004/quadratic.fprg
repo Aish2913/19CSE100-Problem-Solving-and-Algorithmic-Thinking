@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22004"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:40:55 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwNDsyMDIyMjNNQVlDMDA0MTsyMDIyLTExLTA0OzA5OjMwOjU0IEFNOzMwNTI="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwNDsyMDIyMjNNQVlDMDA0MTsyMDIyLTExLTA0OzEwOjQwOjU1IEFNOzQ7MzE1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="initialising the coefficients "/>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <declare name="root1, root2" type="Real" array="False" size=""/>
+            <assign variable="root1" expression="(-b+(b^2-4*a*c)^0.5)/2*a"/>
+            <assign variable="root2" expression="(-b-(b^2-4*a*c)^0.5)/2*a"/>
+            <comment text="finding the roots"/>
+            <output expression="root1" newline="True"/>
+            <output expression="root2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22004"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:20:21 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAwNDsyMDIyMjNNQVlDMDA0MTsyMDIyLTEyLTAyOzA4OjU4OjA2IEFNOzMzMTM="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAwNDsyMDIyMjNNQVlDMDA0MTsyMDIyLTEyLTAyOzA5OjIwOjIxIEFNOzM7MzQxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, i" type="Integer" array="False" size=""/>
+            <comment text="initialising num values"/>
+            <assign variable="num" expression="1"/>
+            <comment text="finding n factorial"/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <assign variable="num" expression="i*num"/>
+            </for>
+            <output expression="&quot;the n factorial is &quot;&amp;&quot;  &quot;&amp;num" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

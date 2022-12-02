@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22004"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:17:21 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAwNDsyMDIyMjNNQVlDMDA0MTsyMDIyLTEyLTAyOzA4OjU4OjA2IEFNOzMzMTM="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAwNDsyMDIyMjNNQVlDMDA0MTsyMDIyLTEyLTAyOzA5OjE3OjIxIEFNOzI7MzQxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <declare name="num, i" type="Integer" array="False" size=""/>
+            <comment text="assigning values"/>
+            <assign variable="sum" expression="0"/>
+            <comment text="adding numbers till 10"/>
+            <for variable="i" start="0" end="10" direction="inc" step="1">
+                <assign variable="sum" expression="i+sum"/>
+            </for>
+            <output expression="&quot;sum is&quot;&amp;&quot;  &quot;&amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

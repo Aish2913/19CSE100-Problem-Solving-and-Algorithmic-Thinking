@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aishwarya"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 07:03:08 AM"/>
+        <attribute name="created" value="QWlzaHdhcnlhO0xBUFRPUC03QzM0R0pVRzsyMDIyLTEyLTA4OzEwOjQwOjAwIFBNOzMyMzg="/>
+        <attribute name="edited" value="QWlzaHdhcnlhO0xBUFRPUC03QzM0R0pVRzsyMDIyLTEyLTA5OzA3OjAzOjA4IEFNOzM7MzM0Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="list" type="Integer" array="True" size="5"/>
+            <declare name="no, j, n1, n2, largest, s" type="Integer" array="False" size=""/>
+            <for variable="j" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;enter number&quot;" newline="True"/>
+                <input variable="no"/>
+                <assign variable="list[j]" expression="no"/>
+            </for>
+            <assign variable="s" expression="0"/>
+            <for variable="j" start="0" end="4" direction="inc" step="1">
+                <while expression="s&lt;list[j]">
+                    <assign variable="s" expression="list[j]"/>
+                </while>
+            </for>
+            <output expression="&quot;the largest element is&quot;&amp;s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

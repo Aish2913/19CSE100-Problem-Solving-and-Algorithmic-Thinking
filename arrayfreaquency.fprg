@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aishwarya"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 07:49:47 AM"/>
+        <attribute name="created" value="QWlzaHdhcnlhO0xBUFRPUC03QzM0R0pVRzsyMDIyLTEyLTA5OzA3OjAzOjE5IEFNOzMyMzk="/>
+        <attribute name="edited" value="QWlzaHdhcnlhO0xBUFRPUC03QzM0R0pVRzsyMDIyLTEyLTA5OzA3OjQ5OjQ3IEFNOzE7MzM1OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="index, frequency, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the total no.of numbers to initialized:&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="arrays" type="Integer" array="True" size="n"/>
+            <declare name="array" type="Integer" array="False" size=""/>
+            <for variable="index" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the integer value:&quot;" newline="True"/>
+                <input variable="array"/>
+                <assign variable="arrays[index]" expression="array"/>
+            </for>
+            <for variable="index" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;The element of [&quot;&amp;index&amp;&quot;] is:&quot;&amp;arrays[index]" newline="True"/>
+            </for>
+            <output expression="&quot;Frequency is:&quot;&amp;n" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

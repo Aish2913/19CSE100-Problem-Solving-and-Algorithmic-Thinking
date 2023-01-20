@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22004"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 11:04:18 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwNDsyMDIyMjNNQVlDMDA2MTsyMDIzLTAxLTIwOzA5OjA1OjQ5IEFNOzMwNTg="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwNDsyMDIyMjNNQVlDMDA2MTsyMDIzLTAxLTIwOzExOjA0OjE4IEFNOzI7MzE1NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="min, index, n, i, j, counter" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the size of the array&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="array" type="Integer" array="True" size="n"/>
+            <output expression="&quot;enter the elements&quot;" newline="True"/>
+            <assign variable="i" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="array[i]"/>
+            </for>
+            <for variable="i" start="0" end="n-1-1" direction="inc" step="1">
+                <assign variable="min" expression="i"/>
+                <for variable="j" start="i+1" end="n-1" direction="inc" step="1">
+                    <if expression="array[j]&lt;array[min]">
+                        <then>
+                            <assign variable="min" expression="j"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <assign variable="counter" expression="array[i]"/>
+                <assign variable="array[i]" expression="array[min]"/>
+                <assign variable="array[min]" expression="counter"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="array[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

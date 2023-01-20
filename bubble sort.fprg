@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22004"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 10:52:04 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwNDsyMDIyMjNNQVlDMDA2MTsyMDIzLTAxLTIwOzEwOjMwOjM1IEFNOzMwNDM="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwNDsyMDIyMjNNQVlDMDA2MTsyMDIzLTAxLTIwOzEwOjUyOjA0IEFNOzE7MzE1MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, counter, incounter, i, elements" type="Integer" array="False" size=""/>
+            <comment text="declaring variables"/>
+            <output expression="&quot;enter the size of the array&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="array" type="Integer" array="True" size="n"/>
+            <assign variable="counter" expression="0"/>
+            <assign variable="incounter" expression="0"/>
+            <output expression="&quot;enter the elements&quot;" newline="True"/>
+            <comment text="getting the input elements from the user"/>
+            <for variable="counter" start="0" end="n-1" direction="inc" step="1">
+                <input variable="elements"/>
+                <assign variable="array[counter]" expression="elements"/>
+            </for>
+            <assign variable="counter" expression="0"/>
+            <for variable="counter" start="0" end="n-1" direction="inc" step="1">
+                <for variable="incounter" start="0" end="n-1-counter-1" direction="inc" step="1">
+                    <comment text="comparing the elements and swapping the values"/>
+                    <if expression="array[incounter]&gt;array[incounter+1]">
+                        <then>
+                            <assign variable="i" expression="array[incounter]"/>
+                            <assign variable="array[incounter]" expression="array[incounter+1]"/>
+                            <assign variable="array[incounter+1]" expression="i"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <output expression="&quot;the sorted array is &quot;" newline="True"/>
+            <assign variable="counter" expression="0"/>
+            <for variable="counter" start="0" end="n-1" direction="inc" step="1">
+                <comment text="printing the sorted array"/>
+                <output expression="array[counter]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
